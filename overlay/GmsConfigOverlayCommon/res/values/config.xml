@@ -103,4 +103,7 @@
          Used by ChooserActivity. -->
     <string name="config_defaultNearbySharingComponent" translatable="false">com.google.android.gms/com.google.android.gms.nearby.sharing.ShareSheetActivity</string>
 
+    <!-- The name of the package that will hold the system gallery role. -->
+    <string name="config_systemGallery" translatable="false">com.google.android.apps.photos</string>
+
 </resources>
