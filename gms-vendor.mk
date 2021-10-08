@@ -9,37 +9,46 @@ PRODUCT_COPY_FILES += \
     vendor/google/gms/proprietary/product/etc/default-permissions/default-permissions-google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-google.xml \
     vendor/google/gms/proprietary/product/etc/permissions/com.google.android.dialer.support.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.dialer.support.xml \
     vendor/google/gms/proprietary/product/etc/permissions/privapp-permissions-google-comms-suite.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-comms-suite.xml \
-    vendor/google/gms/proprietary/product/etc/permissions/privapp-permissions-google-fi.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-fi.xml \
     vendor/google/gms/proprietary/product/etc/permissions/privapp-permissions-google-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-product.xml \
     vendor/google/gms/proprietary/product/etc/permissions/split-permissions-google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/split-permissions-google.xml \
     vendor/google/gms/proprietary/product/etc/preferred-apps/google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/preferred-apps/google.xml \
+    vendor/google/gms/proprietary/product/etc/security/fsverity/gms_fsverity_cert.der:$(TARGET_COPY_OUT_PRODUCT)/etc/security/fsverity/gms_fsverity_cert.der \
     vendor/google/gms/proprietary/product/etc/security/fsverity/play_store_fsi_cert.der:$(TARGET_COPY_OUT_PRODUCT)/etc/security/fsverity/play_store_fsi_cert.der \
-    vendor/google/gms/proprietary/product/etc/sysconfig/google-hiddenapi-package-allowlist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-hiddenapi-package-allowlist.xml \
+    vendor/google/gms/proprietary/product/etc/sysconfig/d2d_cable_migration_feature.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/d2d_cable_migration_feature.xml \
     vendor/google/gms/proprietary/product/etc/sysconfig/google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google.xml \
-    vendor/google/gms/proprietary/product/etc/sysconfig/google_fi.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google_fi.xml \
     vendor/google/gms/proprietary/product/etc/sysconfig/wellbeing.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/wellbeing.xml \
     vendor/google/gms/proprietary/product/usr/srec/en-US/APP_NAME.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/APP_NAME.fst \
     vendor/google/gms/proprietary/product/usr/srec/en-US/APP_NAME.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/APP_NAME.syms \
     vendor/google/gms/proprietary/product/usr/srec/en-US/CLG.prewalk.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/CLG.prewalk.fst \
+    vendor/google/gms/proprietary/product/usr/srec/en-US/CONTACT.transform.mfar:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/CONTACT.transform.mfar \
     vendor/google/gms/proprietary/product/usr/srec/en-US/CONTACT_NAME.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/CONTACT_NAME.fst \
     vendor/google/gms/proprietary/product/usr/srec/en-US/CONTACT_NAME.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/CONTACT_NAME.syms \
     vendor/google/gms/proprietary/product/usr/srec/en-US/SONG_NAME.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/SONG_NAME.fst \
     vendor/google/gms/proprietary/product/usr/srec/en-US/SONG_NAME.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/SONG_NAME.syms \
+    vendor/google/gms/proprietary/product/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.main_model.uint8.data:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.main_model.uint8.data \
+    vendor/google/gms/proprietary/product/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.self_normalized_model.uint8.data:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.self_normalized_model.uint8.data \
+    vendor/google/gms/proprietary/product/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.syms \
     vendor/google/gms/proprietary/product/usr/srec/en-US/am_phonemes.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/am_phonemes.syms \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/app_bias.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/app_bias.fst \
     vendor/google/gms/proprietary/product/usr/srec/en-US/c_fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/c_fst \
     vendor/google/gms/proprietary/product/usr/srec/en-US/commands.abnf:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/commands.abnf \
     vendor/google/gms/proprietary/product/usr/srec/en-US/compile_grammar.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/compile_grammar.config \
     vendor/google/gms/proprietary/product/usr/srec/en-US/config.pumpkin:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/config.pumpkin \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/confirmation_bias.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/confirmation_bias.fst \
     vendor/google/gms/proprietary/product/usr/srec/en-US/contacts.abnf:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/contacts.abnf \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/contacts_bias.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/contacts_bias.fst \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/contacts_disambig.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/contacts_disambig.fst \
     vendor/google/gms/proprietary/product/usr/srec/en-US/dict:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/dict \
     vendor/google/gms/proprietary/product/usr/srec/en-US/dictation.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/dictation.config \
     vendor/google/gms/proprietary/product/usr/srec/en-US/dnn:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/dnn \
     vendor/google/gms/proprietary/product/usr/srec/en-US/embedded_class_denorm.mfar:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/embedded_class_denorm.mfar \
     vendor/google/gms/proprietary/product/usr/srec/en-US/embedded_normalizer.mfar:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/embedded_normalizer.mfar \
+    vendor/google/gms/proprietary/product/usr/srec/en-US/en-US_app-actions_prompted-app-name_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_app-actions_prompted-app-name_TWIDDLER_FST.fst \
+    vendor/google/gms/proprietary/product/usr/srec/en-US/en-US_calendar-actions_AddCalendarEvent-Prompted-FieldToChange_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_calendar-actions_AddCalendarEvent-Prompted-FieldToChange_TWIDDLER_FST.fst \
+    vendor/google/gms/proprietary/product/usr/srec/en-US/en-US_confirmation_confirmation-cancellation_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_confirmation_confirmation-cancellation_TWIDDLER_FST.fst \
+    vendor/google/gms/proprietary/product/usr/srec/en-US/en-US_gmm-actions_gmm-nav-actions_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_gmm-actions_gmm-nav-actions_TWIDDLER_FST.fst \
+    vendor/google/gms/proprietary/product/usr/srec/en-US/en-US_media-actions_music-service-controllable_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_media-actions_music-service-controllable_TWIDDLER_FST.fst \
+    vendor/google/gms/proprietary/product/usr/srec/en-US/en-US_monastery_GenericAction-Prompted-ContactName_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_monastery_GenericAction-Prompted-ContactName_TWIDDLER_FST.fst \
+    vendor/google/gms/proprietary/product/usr/srec/en-US/en-US_monastery_contact-disambig-static_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_monastery_contact-disambig-static_TWIDDLER_FST.fst \
+    vendor/google/gms/proprietary/product/usr/srec/en-US/en-US_read-items_SearchMessageAction-Prompted-Read_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_read-items_SearchMessageAction-Prompted-Read_TWIDDLER_FST.fst \
+    vendor/google/gms/proprietary/product/usr/srec/en-US/en-US_read-items_SearchMessageAction-Prompted-Skip_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_read-items_SearchMessageAction-Prompted-Skip_TWIDDLER_FST.fst \
+    vendor/google/gms/proprietary/product/usr/srec/en-US/en-US_time-actions_time-context_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_time-actions_time-context_TWIDDLER_FST.fst \
     vendor/google/gms/proprietary/product/usr/srec/en-US/endpointer_dictation.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/endpointer_dictation.config \
     vendor/google/gms/proprietary/product/usr/srec/en-US/endpointer_model:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/endpointer_model \
     vendor/google/gms/proprietary/product/usr/srec/en-US/endpointer_model.mmap:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/endpointer_model.mmap \
@@ -57,7 +66,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/gms/proprietary/product/usr/srec/en-US/lexicon.U.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/lexicon.U.fst \
     vendor/google/gms/proprietary/product/usr/srec/en-US/lstm_model.uint8.data:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/lstm_model.uint8.data \
     vendor/google/gms/proprietary/product/usr/srec/en-US/magic_mic.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/magic_mic.config \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/media_bias.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/media_bias.fst \
     vendor/google/gms/proprietary/product/usr/srec/en-US/metadata:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/metadata \
     vendor/google/gms/proprietary/product/usr/srec/en-US/monastery_config.pumpkin:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/monastery_config.pumpkin \
     vendor/google/gms/proprietary/product/usr/srec/en-US/norm_fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/norm_fst \
@@ -66,24 +74,24 @@ PRODUCT_COPY_FILES += \
     vendor/google/gms/proprietary/product/usr/srec/en-US/phonelist:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/phonelist \
     vendor/google/gms/proprietary/product/usr/srec/en-US/portable_lstm:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/portable_lstm \
     vendor/google/gms/proprietary/product/usr/srec/en-US/portable_meanstddev:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/portable_meanstddev \
+    vendor/google/gms/proprietary/product/usr/srec/en-US/prons_exception_dictionary_file.txt:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/prons_exception_dictionary_file.txt \
     vendor/google/gms/proprietary/product/usr/srec/en-US/pumpkin.mmap:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/pumpkin.mmap \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/read_items_bias.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/read_items_bias.fst \
     vendor/google/gms/proprietary/product/usr/srec/en-US/rescoring.fst.compact:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/rescoring.fst.compact \
     vendor/google/gms/proprietary/product/usr/srec/en-US/semantics.pumpkin:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/semantics.pumpkin \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/skip_items_bias.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/skip_items_bias.fst \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/time_bias.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/time_bias.fst \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/transform.mfar:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/transform.mfar \
+    vendor/google/gms/proprietary/product/usr/srec/en-US/verbalizer_terse.mfar:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/verbalizer_terse.mfar \
     vendor/google/gms/proprietary/product/usr/srec/en-US/voice_actions.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/voice_actions.config \
     vendor/google/gms/proprietary/product/usr/srec/en-US/voice_actions_compiler.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/voice_actions_compiler.config \
     vendor/google/gms/proprietary/product/usr/srec/en-US/word_confidence_classifier:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/word_confidence_classifier \
     vendor/google/gms/proprietary/product/usr/srec/en-US/wordlist.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/wordlist.syms \
     vendor/google/gms/proprietary/system/etc/permissions/privapp-permissions-google-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google-system.xml \
+    vendor/google/gms/proprietary/system/etc/sysconfig/google-hiddenapi-package-allowlist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/google-hiddenapi-package-allowlist.xml \
     vendor/google/gms/proprietary/system_ext/etc/permissions/privapp-permissions-google-system-ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-google-system-ext.xml
 
 PRODUCT_PACKAGES += \
     GoogleExtShared \
     GooglePrintRecommendationService \
     GooglePackageInstaller \
+    TagGoogle \
     CalculatorGoogle \
     CalendarGoogle \
     Chrome \
@@ -92,30 +100,26 @@ PRODUCT_PACKAGES += \
     GoogleContacts \
     GoogleContactsSyncAdapter \
     GoogleLocationHistory \
-    GoogleTTS \
     LatinImeGoogle \
     Maps \
     Messages \
     Photos \
+    SpeechServicesByGoogle \
     TrichromeLibrary \
-    Tycho \
     WebViewGoogle \
     YouTube \
     AndroidAutoStub \
     CarrierServices \
     ConfigUpdater \
-    GCS \
     GmsCore \
     AndroidPlatformServices \
     GoogleDialer \
     GooglePartnerSetup \
     GoogleRestore \
-    NovaBugreportWrapper \
     Phonesky \
     Velvet \
     Wellbeing \
     GoogleFeedback \
-    GoogleOneTimeInitializer \
     GoogleServicesFramework \
     SetupWizard \
     com.google.android.dialer.support

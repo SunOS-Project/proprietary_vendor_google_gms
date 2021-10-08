@@ -8,11 +8,8 @@
     <allow-in-power-save package="com.google.android.gms" />
     <allow-in-data-usage-save package="com.google.android.gms" />
     <allow-unthrottled-location package="com.google.android.gms" />
-    <allow-ignore-location-settings package="com.google.android.gms" />
-
-    <!-- OobConfig must always have network access to fetch enterprise and carrier lock config. -->
-    <allow-in-power-save-except-idle package="com.google.android.apps.work.oobconfig" />
-    <allow-in-data-usage-save package="com.google.android.apps.work.oobconfig" />
+    <allow-ignore-location-settings package="com.google.android.gms" attributionTag="com.google.android.gms.thunderbird" />
+    <allow-ignore-location-settings package="com.google.android.dialer" attributionTag="*" />
 
     <!-- Turbo must not have App Standby restrictions in order to push new
          App Standby buckets to the platform periodically -->
@@ -39,11 +36,13 @@
 
     <!-- Apps below are required on all GMS devices -->
     <app-link package="com.android.vending" />
+    <app-link package="com.google.android.gms" />
     <app-link package="com.google.android.apps.maps" />
     <app-link package="com.google.android.youtube" />
     <app-link package="com.google.android.apps.docs" />
     <app-link package="com.google.android.apps.photos" />
     <app-link package="com.google.android.apps.youtube.music" />
+    <app-link package="com.google.android.googlequicksearchbox" />
 
     <!-- Apps below are optional on GMS devices -->
     <app-link package="com.google.android.apps.docs.editors.sheets" />
@@ -52,17 +51,7 @@
     <app-link package="com.google.android.talk" />
     <app-link package="com.google.android.videos" />
     <app-link package="com.google.android.calendar" />
-
-    <!-- These are the packages that are white-listed to be able to run as system user -->
-    <system-user-whitelisted-app package="com.android.vending" />
-    <system-user-whitelisted-app package="com.google.android.gms" />
-    <system-user-whitelisted-app package="com.google.android.gms.policy_auth" />
-    <system-user-whitelisted-app package="com.google.android.play.games" />
-    <system-user-whitelisted-app package="com.google.android.tts" />
-
-    <!-- These are the packages that are uninstalled for system user -->
-    <!-- Apps below are required on all GMS devices -->
-    <system-user-blacklisted-app package="com.google.android.googlequicksearchbox" />
+    <app-link package="com.google.android.apps.wallpaper" />
 
     <!-- Whitelist of what components are permitted as backup data transports.  The
          'service' attribute here is a flattened ComponentName string. -->
