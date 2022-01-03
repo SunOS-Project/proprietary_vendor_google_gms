@@ -108,12 +108,15 @@ PRODUCT_PACKAGES += \
     TrichromeLibrary \
     WebViewGoogle \
     YouTube \
+    talkback \
     AndroidAutoStub \
     CarrierServices \
     ConfigUpdater \
+    FilesGoogle \
     GmsCore \
     AndroidPlatformServices \
     GoogleDialer \
+    GoogleOneTimeInitializer \
     GooglePartnerSetup \
     GoogleRestore \
     Phonesky \

@@ -42,6 +42,11 @@
         frameworks/base/services/core/java/com/android/server/pm/UserSystemPackageInstaller.java -->
     <integer name="config_userTypePackageWhitelistMode">5</integer> <!-- 1+4 -->
 
+    <!-- List containing the allowed install sources for accessibility service. -->
+    <string-array name="config_accessibility_allowed_install_source" translatable="false">
+        <item>com.android.vending</item>
+    </string-array>
+
     <!-- A list of potential packages, in priority order, that may contain an
          ephemeral resolver. Each package will be be queried for a component
          that has been granted the PACKAGE_EPHEMERAL_AGENT permission.
@@ -165,5 +170,8 @@
 
     <!-- The name of the package that will hold the system gallery role. -->
     <string name="config_systemGallery" translatable="false">com.google.android.apps.photos</string>
+
+    <!-- The package name for the fast pair provider application. [DO NOT TRANSLATE] -->
+    <string name="config_systemCompanionDeviceProvider" translatable="false">com.google.android.gms</string>
 
 </resources>
