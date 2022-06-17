@@ -171,7 +171,4 @@
     <!-- The package name for the fast pair provider application. [DO NOT TRANSLATE] -->
     <string name="config_systemCompanionDeviceProvider" translatable="false">com.google.android.gms</string>
 
-    <!-- The name of the package that will hold the system gallery role. -->
-    <string name="config_systemGallery" translatable="false">com.google.android.apps.photos</string>
-
 </resources>
