@@ -30,7 +30,6 @@ product/etc/sysconfig/wellbeing.xml
 -product/priv-app/AndroidAutoStub/AndroidAutoStub.apk;PRESIGNED
 -product/priv-app/CarrierServices/CarrierServices.apk;PRESIGNED
 -product/priv-app/ConfigUpdater/ConfigUpdater.apk;PRESIGNED
--product/priv-app/FilesGoogle/FilesGoogle.apk;PRESIGNED;OVERRIDES=StorageManager
 -product/priv-app/GmsCore/GmsCore.apk;PRESIGNED
 -product/priv-app/GmsCore/m/independent/AndroidPlatformServices.apk;PRESIGNED
 -product/priv-app/GoogleDialer/GoogleDialer.apk;OVERRIDES=Dialer;PRESIGNED

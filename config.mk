@@ -10,6 +10,7 @@ $(call inherit-product, vendor/google/gms/gms-vendor.mk)
 # Overlays
 PRODUCT_PACKAGES += \
     GmsCarrierConfigOverlay \
+    GmsConfigOverlayASI \
     GmsConfigOverlayCommon \
     GmsConfigOverlayComms \
     GmsConfigOverlayGeotz \
@@ -29,7 +30,7 @@ PRODUCT_PACKAGES += \
 
 # Properties
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.gmsversion=12_202201 \
+    ro.com.google.gmsversion=12_202204 \
     ro.opa.eligible_device=true \
     ro.setupwizard.rotation_locked=true \
     setupwizard.theme=glif_v3_light

@@ -86,6 +86,7 @@
     <privapp-permissions package="com.google.android.apps.setupwizard.searchselector">
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
         <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
     </privapp-permissions>
     <privapp-permissions package="com.google.android.apps.speechservices">
         <permission name="android.permission.BIND_APPWIDGET"/>
@@ -109,7 +110,6 @@
         <permission name="android.permission.BRIGHTNESS_SLIDER_USAGE"/>
         <permission name="android.permission.CHANGE_APP_IDLE_STATE"/>
         <permission name="android.permission.CONFIGURE_DISPLAY_BRIGHTNESS"/>
-        <permission name="android.permission.DUMP"/>
         <permission name="android.permission.PACKAGE_USAGE_STATS"/>
         <permission name="android.permission.POWER_SAVER"/>
         <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
@@ -122,6 +122,7 @@
         <permission name="android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS"/>
         <permission name="android.permission.CONTROL_DISPLAY_SATURATION"/>
         <permission name="android.permission.INTERACT_ACROSS_PROFILES"/>
+        <permission name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
         <permission name="android.permission.MODIFY_QUIET_MODE"/>
         <permission name="android.permission.OBSERVE_APP_USAGE"/>
@@ -130,11 +131,24 @@
         <permission name="android.permission.READ_WALLPAPER_INTERNAL"/>
         <permission name="android.permission.REAL_GET_TASKS"/>
         <permission name="android.permission.SET_WALLPAPER_COMPONENT"/>
+        <permission name="android.permission.SET_WALLPAPER_DIM_AMOUNT"/>
         <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
         <permission name="android.permission.START_TASKS_FROM_RECENTS"/>
         <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
         <permission name="android.permission.WRITE_DREAM_STATE"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+    <privapp-permissions package="com.google.android.as">
+        <permission name="android.permission.READ_OEM_UNLOCK_STATE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.MANAGE_APP_PREDICTIONS"/>
+        <permission name="android.permission.CAPTURE_MEDIA_OUTPUT"/>
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.SYSTEM_CAMERA"/>
+        <permission name="android.permission.UPDATE_DEVICE_STATS"/>
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
     </privapp-permissions>
     <privapp-permissions package="com.google.android.calendar">
         <permission name="android.permission.INTERACT_ACROSS_PROFILES"/>
@@ -152,6 +166,7 @@
     <privapp-permissions package="com.google.android.gms">
         <permission name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
         <permission name="android.permission.ACCESS_CONTEXT_HUB"/>
+        <permission name="android.permission.ACCESS_FPS_COUNTER"/>
         <permission name="android.permission.ACCESS_NETWORK_CONDITIONS"/>
         <permission name="android.permission.ACTIVITY_EMBEDDING"/>
         <permission name="android.permission.ALLOCATE_AGGRESSIVE"/>
@@ -180,6 +195,8 @@
         <permission name="android.permission.LOCATION_HARDWARE"/>
         <permission name="android.permission.LOCK_DEVICE"/>
         <permission name="android.permission.MANAGE_FACTORY_RESET_PROTECTION"/>
+        <permission name="android.permission.MANAGE_GAME_ACTIVITY"/>
+        <permission name="android.permission.MANAGE_GAME_MODE"/>
         <permission name="android.permission.MANAGE_ROLLBACKS"/>
         <permission name="android.permission.MANAGE_SOUND_TRIGGER"/>
         <permission name="android.permission.MANAGE_SUBSCRIPTION_PLANS"/>
@@ -189,6 +206,7 @@
         <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
         <permission name="android.permission.MASTER_CLEAR"/>
         <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+        <permission name="android.permission.MEDIA_CONTENT_CONTROL"/>
         <permission name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
         <permission name="android.permission.MODIFY_NETWORK_ACCOUNTING"/>
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
@@ -288,6 +306,7 @@
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
     </privapp-permissions>
     <privapp-permissions package="com.google.android.projection.gearhead">
+        <permission name="android.permission.ACTIVITY_EMBEDDING"/>
         <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
         <permission name="android.permission.BIND_DIRECTORY_SEARCH"/>
         <permission name="android.permission.CALL_PRIVILEGED"/>

@@ -171,4 +171,37 @@
     <!-- The package name for the fast pair provider application. [DO NOT TRANSLATE] -->
     <string name="config_systemCompanionDeviceProvider" translatable="false">com.google.android.gms</string>
 
+    <!-- Enable overlay for all location components. -->
+    <bool name="config_enableNetworkLocationOverlay">true</bool>
+    <bool name="config_enableFusedLocationOverlay">true</bool>
+    <bool name="config_enableGeocoderOverlay">true</bool>
+    <bool name="config_enableGeofenceOverlay">true</bool>
+
+    <!-- Update the default behavior of power button to be compatible with that of previous Android
+         releases. If this behavior is not desired, change the value of the following three
+         configurations as needed.-->
+
+    <!-- Control the behavior when the user long presses the power button.
+            0 - Nothing
+            1 - Global actions menu
+            2 - Power off (with confirmation)
+            3 - Power off (without confirmation)
+            4 - Go to voice assist
+            5 - Go to assistant (Settings.Secure.ASSISTANT)
+    -->
+    <integer name="config_longPressOnPowerBehavior">1</integer>
+
+    <!-- Control the behavior when the user presses the power and volume up buttons together.
+            0 - Nothing
+            1 - Mute toggle
+            2 - Global actions menu
+    -->
+    <integer name="config_keyChordPowerVolumeUp">0</integer>
+
+    <!-- The name of the package that will hold the music role by default. -->
+    <string name="config_defaultMusic" translatable="false">com.google.android.apps.youtube.music</string>
+
+    <!-- The name of the package that will hold the system activity recognizer role. -->
+    <string name="config_systemActivityRecognizer" translatable="false">com.google.android.gms</string>
+
 </resources>

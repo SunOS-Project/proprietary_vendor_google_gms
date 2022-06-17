@@ -112,7 +112,6 @@ PRODUCT_PACKAGES += \
     AndroidAutoStub \
     CarrierServices \
     ConfigUpdater \
-    FilesGoogle \
     GmsCore \
     AndroidPlatformServices \
     GoogleDialer \

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="config_systemTextIntelligence" translatable="false">com.google.android.as</string>
+<string name="config_systemNotificationIntelligence" translatable="false">com.google.android.as</string>
+<string name="config_systemAudioIntelligence" translatable="false">com.google.android.as</string>
+<string name="config_systemVisualIntelligence" translatable="false">com.google.android.as</string>
+<string name="config_systemUiIntelligence" translatable="false">com.google.android.as</string>
+
+<string name="config_defaultOnDeviceSpeechRecognitionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSpeechRecognitionService</string>
+<string name="config_defaultAugmentedAutofillService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService</string>
+<string name="config_defaultTextClassifierPackage" translatable="false">com.google.android.as</string>
+<string name="config_defaultContentCaptureService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentCaptureService</string>
+
+<string name="config_defaultAppPredictionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService</string>
+<string name="config_defaultAttentionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.attention.service.AiAiAttentionService</string>
+
+<!-- Flag indicating whether we should enable the adaptive sleep.-->
+<bool name="config_adaptive_sleep_available">true</bool>
+
+</resources>
