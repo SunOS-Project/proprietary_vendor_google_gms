@@ -2,6 +2,7 @@ product/app/CalculatorGoogle/CalculatorGoogle.apk;OVERRIDES=Calculator,ExactCalc
 product/app/CalendarGoogle/CalendarGoogle.apk;OVERRIDES=Calendar;PRESIGNED
 product/app/Chrome/Chrome.apk;OVERRIDES=Browser,Browser2;PRESIGNED
 product/app/DeskClockGoogle/DeskClockGoogle.apk;OVERRIDES=DeskClock;PRESIGNED
+product/app/Drive/Drive.apk;PRESIGNED
 product/app/Gmail2/Gmail2.apk;OVERRIDES=Email;PRESIGNED
 product/app/GoogleContacts/GoogleContacts.apk;OVERRIDES=Contacts;PRESIGNED
 product/app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk;PRESIGNED

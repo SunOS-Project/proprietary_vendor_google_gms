@@ -96,6 +96,7 @@ PRODUCT_PACKAGES += \
     CalendarGoogle \
     Chrome \
     DeskClockGoogle \
+    Drive \
     Gmail2 \
     GoogleContacts \
     GoogleContactsSyncAdapter \
