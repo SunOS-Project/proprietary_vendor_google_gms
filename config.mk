@@ -7,6 +7,12 @@
 # Automated
 $(call inherit-product, vendor/google/gms/gms-vendor.mk)
 
+# Android Build system uncompresses DEX files (classes*.dex) in the privileged
+# apps by default, which breaks APK v2/v3 signature. Because some privileged
+# GMS apps are still shipped with compressed DEX, we need to disable
+# uncompression feature to make them work correctly.
+DONT_UNCOMPRESS_PRIV_APPS_DEXS := true
+
 # Overlays
 PRODUCT_PACKAGES += \
     GmsCarrierConfigOverlay \
@@ -30,7 +36,7 @@ PRODUCT_PACKAGES += \
 
 # Properties
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.gmsversion=12_202204 \
+    ro.com.google.gmsversion=13_202208 \
     ro.opa.eligible_device=true \
     ro.setupwizard.rotation_locked=true \
     setupwizard.theme=glif_v3_light
