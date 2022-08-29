@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2021 The Android Open Source Project
+<!-- Copyright (C) 2022 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,13 +14,13 @@
      limitations under the License.
 -->
 <resources>
-
-    <!-- A collection of apps that have been pre-approved for cross-profile communication.
-         These will not require admin consent, but will still require user consent during provisioning. -->
-    <string-array name="vendor_cross_profile_apps">
-        <item>com.google.android.googlequicksearchbox</item>
-        <item>com.google.android.inputmethod.latin</item>
-        <item>com.google.android.projection.gearhead</item>
+    <!--
+    A collection of apps that have been pre-approved for cross-profile communication.
+    These will not require admin or user consent.
+    -->
+    <string-array translatable="false" name="vendor_cross_profile_apps">
+        <item>com.google.android.googlequicksearchbox</item> <!-- Google -->
+        <item>com.google.android.inputmethod.latin</item> <!-- Gboard -->
+        <item>com.google.android.projection.gearhead</item> <!-- Android Auto -->
     </string-array>
-
 </resources>

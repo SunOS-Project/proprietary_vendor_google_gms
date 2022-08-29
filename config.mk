@@ -15,18 +15,21 @@ DONT_UNCOMPRESS_PRIV_APPS_DEXS := true
 
 # Overlays
 PRODUCT_PACKAGES += \
-    GmsCarrierConfigOverlay \
     GmsConfigOverlayASI \
     GmsConfigOverlayCommon \
     GmsConfigOverlayComms \
     GmsConfigOverlayGeotz \
     GmsConfigOverlayGSA \
+    GmsConfigOverlayPersonalSafety \
     GmsConfigOverlayPhotos \
     GmsContactsProviderOverlay \
     GmsSettingsOverlay \
+    GmsSettingsOverlayPersonalSafety \
+    GmsSettingsOverlayTurbo \
     GmsSettingsProviderOverlay \
     GmsSetupWizardOverlay \
     GmsSystemUIOverlay \
+    GmsSystemUIOverlayPersonalSafety \
     GmsTelecommOverlay \
     GmsTelephonyOverlay
 
