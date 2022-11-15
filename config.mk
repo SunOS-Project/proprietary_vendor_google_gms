@@ -42,7 +42,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.gmsversion=13_202208 \
     ro.opa.eligible_device=true \
     ro.setupwizard.rotation_locked=true \
-    setupwizard.theme=glif_v3_light
+    setupwizard.theme=glif_v4_light
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PRODUCT_PROPERTIES += \
