@@ -14,7 +14,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/gms/proprietary/product/etc/preferred-apps/google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/preferred-apps/google.xml \
     vendor/google/gms/proprietary/product/etc/security/fsverity/gms_fsverity_cert.der:$(TARGET_COPY_OUT_PRODUCT)/etc/security/fsverity/gms_fsverity_cert.der \
     vendor/google/gms/proprietary/product/etc/security/fsverity/play_store_fsi_cert.der:$(TARGET_COPY_OUT_PRODUCT)/etc/security/fsverity/play_store_fsi_cert.der \
-    vendor/google/gms/proprietary/product/etc/sysconfig/asi_features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/asi_features.xml \
     vendor/google/gms/proprietary/product/etc/sysconfig/d2d_cable_migration_feature.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/d2d_cable_migration_feature.xml \
     vendor/google/gms/proprietary/product/etc/sysconfig/google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google.xml \
     vendor/google/gms/proprietary/product/etc/sysconfig/personal_safety.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/personal_safety.xml \
