@@ -1,6 +1,6 @@
 product/app/CalculatorGoogle/CalculatorGoogle.apk;OVERRIDES=Calculator,ExactCalculator;PRESIGNED
 product/app/CalendarGoogle/CalendarGoogle.apk;OVERRIDES=Calendar;PRESIGNED
-product/app/Chrome/Chrome.apk;OVERRIDES=Browser,Browser2;PRESIGNED
+product/app/Chrome64/Chrome64.apk;OVERRIDES=Browser,Browser2;PRESIGNED
 product/app/DeskClockGoogle/DeskClockGoogle.apk;OVERRIDES=DeskClock;PRESIGNED
 product/app/Drive/Drive.apk;PRESIGNED
 product/app/Gmail2/Gmail2.apk;OVERRIDES=Email;PRESIGNED
@@ -11,8 +11,8 @@ product/app/Maps/Maps.apk;PRESIGNED
 product/app/Messages/Messages.apk;OVERRIDES=Mms,messaging;PRESIGNED
 product/app/Photos/Photos.apk;OVERRIDES=Gallery2,SnapdragonGallery;PRESIGNED
 product/app/SpeechServicesByGoogle/SpeechServicesByGoogle.apk;PRESIGNED
-product/app/TrichromeLibrary/TrichromeLibrary.apk;PRESIGNED
-product/app/WebViewGoogle/WebViewGoogle.apk;OVERRIDES=webview;PRESIGNED
+product/app/TrichromeLibrary64/TrichromeLibrary64.apk;PRESIGNED
+product/app/WebViewGoogle64/WebViewGoogle64.apk;OVERRIDES=webview;PRESIGNED
 product/app/YouTube/YouTube.apk;PRESIGNED
 product/app/talkback/talkback.apk;PRESIGNED
 product/etc/default-permissions/default-permissions-google.xml
