@@ -95,7 +95,7 @@ PRODUCT_PACKAGES += \
     TagGoogle \
     CalculatorGoogle \
     CalendarGoogle \
-    Chrome \
+    Chrome64 \
     DeskClockGoogle \
     Drive \
     Gmail2 \
@@ -106,8 +106,8 @@ PRODUCT_PACKAGES += \
     Messages \
     Photos \
     SpeechServicesByGoogle \
-    TrichromeLibrary \
-    WebViewGoogle \
+    TrichromeLibrary64 \
+    WebViewGoogle64 \
     YouTube \
     talkback \
     AndroidAutoStub \

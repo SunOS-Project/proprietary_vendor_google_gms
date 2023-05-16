@@ -76,9 +76,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "Chrome",
+	name: "Chrome64",
 	owner: "google",
-	apk: "proprietary/product/app/Chrome/Chrome.apk",
+	apk: "proprietary/product/app/Chrome64/Chrome64.apk",
 	overrides: ["Browser", "Browser2"],
 	presigned: true,
 	dex_preopt: {
@@ -204,9 +204,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "TrichromeLibrary",
+	name: "TrichromeLibrary64",
 	owner: "google",
-	apk: "proprietary/product/app/TrichromeLibrary/TrichromeLibrary.apk",
+	apk: "proprietary/product/app/TrichromeLibrary64/TrichromeLibrary64.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -215,9 +215,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "WebViewGoogle",
+	name: "WebViewGoogle64",
 	owner: "google",
-	apk: "proprietary/product/app/WebViewGoogle/WebViewGoogle.apk",
+	apk: "proprietary/product/app/WebViewGoogle64/WebViewGoogle64.apk",
 	overrides: ["webview"],
 	presigned: true,
 	dex_preopt: {

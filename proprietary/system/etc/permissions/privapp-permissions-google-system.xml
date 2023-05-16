@@ -1,8 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-This XML file declares which signature|privileged permissions should be granted to
-privileged Google applications in GMS devices.
--->
+<?xml version="1.0" ?>
 <permissions>
     <privapp-permissions package="com.google.android.packageinstaller">
         <permission name="android.permission.DELETE_PACKAGES"/>
@@ -13,7 +9,6 @@ privileged Google applications in GMS devices.
         <permission name="android.permission.UPDATE_APP_OPS_STATS"/>
         <permission name="android.permission.USE_RESERVED_DISK"/>
     </privapp-permissions>
-
     <privapp-permissions package="com.google.android.tag">
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
