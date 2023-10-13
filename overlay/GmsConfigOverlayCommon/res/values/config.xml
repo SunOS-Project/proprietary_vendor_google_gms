@@ -250,4 +250,118 @@
     <string-array name="config_accessibility_allowed_install_source" translatable="false">
         <item>com.android.vending</item>
     </string-array>
+
+    <!-- The list of IMEs which should be disabled until used.
+         This function suppresses update notifications for these pre-installed apps.
+         We need to set this configuration carefully that they should not have functionarities
+         other than "IME" or "Spell Checker". In InputMethodManagerService,
+         the listed IMEs are disabled until used when all of the following conditions are met.
+         1. Not selected as an enabled IME in the Settings
+         2. Not selected as a spell checker in the Settings
+         3. Installed
+         4. A pre-installed IME
+         5. Not enabled
+         And the disabled_until_used state for an IME is released by InputMethodManagerService
+         when the IME is selected as an enabled IME. -->
+    <string-array name="config_disabledUntilUsedPreinstalledImes">
+        <item>com.google.android.inputmethod.latin</item>
+    </string-array>
+
+    <!-- The component name(s), flattened to a string, for the system's credential manager
+      provider services. These services allow retrieving and storing credentials.
+
+     These services must be trusted, as they can be activated without explicit consent of the user.
+     If no service with the specified name exists on the device, there will be no user configurable
+     provider to service credential manager requests. However, credential manager system
+     services that do not require user consent, will still work.
+
+     See android.credentials.CredentialManager
+    -->
+    <string-array name="config_enabledCredentialProviderService">
+        <item>com.google.android.gms/.auth.api.credentials.credman.service.PasswordAndPasskeyService</item>
+    </string-array>
+
+    <!-- List of certificate to be used for font fs-verity integrity verification -->
+    <string-array name="config_fontManagerServiceCerts">
+        <item>/product/etc/security/fsverity/gms_fsverity_cert.der</item>
+    </string-array>
+
+    <!-- Certificate digests for trusted apps that will be allowed to obtain the knownSigner Health
+        Connect Migration permissions. The digest should be computed over the DER encoding of the
+        trusted certificate using the SHA-256 digest algorithm. -->
+    <string-array name="config_healthConnectMigrationKnownSigners">
+        <item>B2C0A80E485934BFB08F902CA27505813DF3159E4E6DD4A4DF078D66CB1C2003</item>
+    </string-array>
+
+    <!-- Certificate digests for trusted apps that will be allowed to obtain the knownSigner
+         permission for staging HealthConnect's remote data. The digest should be computed over the
+         DER encoding of the trusted certificate using the SHA-256 digest algorithm. -->
+    <string-array name="config_healthConnectRestoreKnownSigners">
+        <item>56BE132B780656FE2444CD34326EB5D7AAC91D2096ABF0FE673A99270622EC87</item>
+    </string-array>
+
+    <!-- The component name(s), flattened to a string, for the system's primary credential manager
+      provider services. These service will be used by default for storing credentials.
+
+     These services must be trusted, as they can be activated without explicit consent of the user.
+
+     See android.credentials.CredentialManager
+    -->
+    <string-array name="config_primaryCredentialProviderService">
+        <item>com.google.android.gms/.auth.api.credentials.credman.service.PasswordAndPasskeyService</item>
+    </string-array>
+
+    <!-- Controls whether system buttons use all caps for text -->
+    <bool name="config_buttonTextAllCaps">false</bool>
+
+    <!-- The system and settings UI can support all the features of instant tether. If set to false,
+     instant tether will run in notifications mode -->
+    <bool name="config_hotspotNetworksEnabledForService">false</bool>
+
+    <!-- The system and settings UI can support all the features of known networks. If set to false,
+         known networks will run in notifications mode -->
+    <bool name="config_knownNetworksEnabledForService">false</bool>
+
+    <!-- Flag indicating whether we should enable smart battery. -->
+    <bool name="config_smart_battery_available">true</bool>
+
+    <!-- Whether system apps should be scanned in the stopped state during initial boot.
+        Packages can be added by OEMs in an allowlist, to prevent them from being scanned as
+        "stopped" during initial boot of a device, or after an OTA update. Stopped state of
+        an app is not changed during subsequent reboots.  -->
+    <bool name="config_stopSystemPackagesByDefault">true</bool>
+
+    <!-- Whether this device is supporting the camera toggle -->
+    <bool name="config_supportsCamToggle">true</bool>
+
+    <!-- Whether this device is supporting the software microphone toggle -->
+    <bool name="config_supportsMicToggle">true</bool>
+
+    <!-- Indicates whether the system wide captions service should also support
+         call captioning.
+    -->
+    <bool name="config_systemCaptionsServiceCallsEnabled">true</bool>
+
+    <!-- The component name, flattened to a string, for the system's credential manager
+      hybrid service. This service allows credential retrieval and storage from, and to
+      remote devices.
+
+     This service must be trusted, as it can be activated without explicit consent of the user.
+     If no service with the specified name exists on the device, credential manager
+     will still work, but remote credential retrieval and storage will not be offered to
+     the user.
+
+     See android.credentials.CredentialManager
+    -->
+    <string name="config_defaultCredentialManagerHybridService">com.google.android.gms/.auth.api.credentials.credman.service.RemoteService</string>
+
+    <!-- Default component for QR code scanner -->
+    <string name="config_defaultQrCodeComponent">com.google.android.gms/.mlkit.barcode.ui.PlatformBarcodeScanningActivityProxy</string>
+
+    <!-- Package name of Health Connect data migrator application.  -->
+    <string name="config_healthConnectMigratorPackageName">com.google.android.apps.healthdata</string>
+
+    <!-- The name of the package that will hold the call streaming role. -->
+    <string name="config_systemCallStreaming">com.google.android.gms</string>
+
 </resources>

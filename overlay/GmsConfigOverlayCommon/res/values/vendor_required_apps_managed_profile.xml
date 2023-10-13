@@ -25,5 +25,6 @@
         <item>com.google.android.apps.searchlite</item> <!-- Google Search GO -->
         <item>com.google.android.documentsui</item> <!-- Files -->
         <item>com.google.android.projection.gearhead</item> <!-- Android Auto -->
+        <item>com.google.android.apps.accessibility.voiceaccess</item> <!-- Voice Access -->
     </string-array>
 </resources>

@@ -26,5 +26,6 @@
         <item>com.google.android.dialer</item> <!-- Google dialer to enable making phone calls -->
         <item>com.google.android.apps.messaging</item> <!-- Google Messenger for SMS -->
         <item>com.google.android.documentsui</item> <!-- Files -->
+        <item>com.google.android.apps.accessibility.voiceaccess</item> <!-- Voice Access -->
     </string-array>
 </resources>

@@ -76,9 +76,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "Chrome64",
+	name: "Chrome",
 	owner: "google",
-	apk: "proprietary/product/app/Chrome64/Chrome64.apk",
+	apk: "proprietary/product/app/Chrome/Chrome.apk",
 	overrides: ["Browser", "Browser2"],
 	presigned: true,
 	dex_preopt: {
@@ -169,18 +169,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "Messages",
-	owner: "google",
-	apk: "proprietary/product/app/Messages/Messages.apk",
-	overrides: ["Mms", "messaging"],
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
 	name: "Photos",
 	owner: "google",
 	apk: "proprietary/product/app/Photos/Photos.apk",
@@ -204,9 +192,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "TrichromeLibrary64",
+	name: "TrichromeLibrary",
 	owner: "google",
-	apk: "proprietary/product/app/TrichromeLibrary64/TrichromeLibrary64.apk",
+	apk: "proprietary/product/app/TrichromeLibrary/TrichromeLibrary.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -215,9 +203,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "WebViewGoogle64",
+	name: "WebViewGoogle",
 	owner: "google",
-	apk: "proprietary/product/app/WebViewGoogle64/WebViewGoogle64.apk",
+	apk: "proprietary/product/app/WebViewGoogle/WebViewGoogle.apk",
 	overrides: ["webview"],
 	presigned: true,
 	dex_preopt: {
@@ -362,6 +350,19 @@ android_app_import {
 	name: "GoogleRestore",
 	owner: "google",
 	apk: "proprietary/product/priv-app/GoogleRestore/GoogleRestore.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "Messages",
+	owner: "google",
+	apk: "proprietary/product/priv-app/Messages/Messages.apk",
+	overrides: ["Mms", "messaging"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,

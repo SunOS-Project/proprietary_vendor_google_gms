@@ -1,6 +1,6 @@
 product/app/CalculatorGoogle/CalculatorGoogle.apk;OVERRIDES=Calculator,ExactCalculator;PRESIGNED
 product/app/CalendarGoogle/CalendarGoogle.apk;OVERRIDES=Calendar;PRESIGNED
-product/app/Chrome64/Chrome64.apk;OVERRIDES=Browser,Browser2;PRESIGNED
+product/app/Chrome/Chrome.apk;OVERRIDES=Browser,Browser2;PRESIGNED
 product/app/DeskClockGoogle/DeskClockGoogle.apk;OVERRIDES=DeskClock;PRESIGNED
 product/app/Drive/Drive.apk;PRESIGNED
 product/app/Gmail2/Gmail2.apk;OVERRIDES=Email;PRESIGNED
@@ -8,11 +8,11 @@ product/app/GoogleContacts/GoogleContacts.apk;OVERRIDES=Contacts;PRESIGNED
 product/app/GoogleLocationHistory/GoogleLocationHistory.apk;PRESIGNED
 product/app/LatinImeGoogle/LatinImeGoogle.apk;OVERRIDES=LatinIME;PRESIGNED
 product/app/Maps/Maps.apk;PRESIGNED
-product/app/Messages/Messages.apk;OVERRIDES=Mms,messaging;PRESIGNED
+product/priv-app/Messages/Messages.apk;OVERRIDES=Mms,messaging;PRESIGNED
 product/app/Photos/Photos.apk;OVERRIDES=Gallery2,SnapdragonGallery;PRESIGNED
 product/app/SpeechServicesByGoogle/SpeechServicesByGoogle.apk;PRESIGNED
-product/app/TrichromeLibrary64/TrichromeLibrary64.apk;PRESIGNED
-product/app/WebViewGoogle64/WebViewGoogle64.apk;OVERRIDES=webview;PRESIGNED
+product/app/TrichromeLibrary/TrichromeLibrary.apk;PRESIGNED
+product/app/WebViewGoogle/WebViewGoogle.apk;OVERRIDES=webview;PRESIGNED
 product/app/YouTube/YouTube.apk;PRESIGNED
 product/app/talkback/talkback.apk;PRESIGNED
 product/etc/default-permissions/default-permissions-google.xml
@@ -25,6 +25,8 @@ product/etc/security/fsverity/gms_fsverity_cert.der
 product/etc/security/fsverity/play_store_fsi_cert.der
 product/etc/sysconfig/d2d_cable_migration_feature.xml
 product/etc/sysconfig/google.xml
+product/etc/sysconfig/google-initial-package-stopped-states.xml
+product/etc/sysconfig/google_wifi_provisioner.xml
 product/etc/sysconfig/personal_safety.xml
 product/etc/sysconfig/wellbeing.xml
 product/framework/com.google.android.dialer.support.jar
@@ -109,7 +111,7 @@ product/usr/srec/en-US/voice_actions_compiler.config
 product/usr/srec/en-US/voice_actions.config
 product/usr/srec/en-US/word_confidence_classifier
 product/usr/srec/en-US/wordlist.syms
-system_ext/etc/permissions/privapp-permissions-google-system-ext.xml
+system_ext/etc/permissions/privapp-permissions-google-system_ext.xml
 system_ext/priv-app/EmergencyInfoGms/EmergencyInfoGms.apk;PRESIGNED
 system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk;PRESIGNED
 system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk;PRESIGNED
