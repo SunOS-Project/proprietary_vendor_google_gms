@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- These are configurations that must exist on all GMS devices. -->
 <config>
-
-    <!-- gene.yan add for AFT-11 google Primier Tier device needed feature-->
-    <feature name="com.google.android.feature.PREMIER_TIER" />
-
-    <!-- Add Google Dialer Call Record Feature flag -->
-    <feature name="com.google.android.apps.dialer.call_recording_audio" />
-
     <!-- These are the standard packages that are white-listed to always have internet
          access while in power save mode, even if they aren't in the foreground. -->
 
@@ -24,9 +17,6 @@
     <!-- Turbo must not have App Standby restrictions in order to push new
          App Standby buckets to the platform periodically -->
     <allow-in-power-save-except-idle package="com.google.android.apps.turbo" />
-
-    <!-- Add by KenShen 20220727, Enable Device Health Services -->
-    <feature name="com.google.android.feature.TURBO_PRELOAD" />
 
     <!-- Certain broadcasts must still go to legacy implicit receivers -->
     <allow-implicit-broadcast action="com.google.android.checkin.CHECKIN_COMPLETE" />
@@ -93,10 +83,6 @@
 
     <!-- AI services open-source network component can only bind back to the core package. -->
     <allow-association target="com.google.android.as.oss" allowed="com.google.android.as" />
-
-    <!-- Add by Ken for ok Cross device service -->
-    <allow-in-power-save package="com.google.ambient.streaming" />
-    <feature name="com.google.ambient.streaming" />
 
     <!-- Specify the explicit set of other applications whose app data directories are
         accessible by other applications. -->

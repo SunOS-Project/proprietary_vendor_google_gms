@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2022 The Android Open Source Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+<!--
+/*
+**
+** Copyright 2012, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Package name for default widget [DO NOT TRANSLATE] -->
@@ -27,6 +31,9 @@
     <string name="config_systemSettingsIntelligence" translatable="false">
         com.android.settings.intelligence
     </string>
+
+    <!-- System bluetooth stack package name -->
+    <!-- This configuration is provided by the Mainline module distribution -->
 
     <!-- The list of IMEs which should be disabled until used.
          This function suppresses update notifications for these pre-installed apps.
@@ -78,14 +85,25 @@
     <!-- The package name of the default network recommendation app. -->
     <string name="config_defaultNetworkRecommendationProviderPackage" translatable="false">com.google.android.gms</string>
 
+    <!-- The package name of the default captive portal login app. Must be granted the POST_NOTIFICATIONS
+         permission. -->
+
+    <!-- The package name of the dock manager app. Must be granted the POST_NOTIFICATIONS
+         permission. -->
+
     <!-- Default service to enable with accessibility shortcut [DO NOT TRANSLATE] -->
     <string name="config_defaultAccessibilityService" translatable="false">com.google.android.marvin.talkback/.TalkBackService</string>
+
+    <!-- Default notification sound when to enable accessibility shortcut [DO NOT TRANSLATE] -->
 
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
     <string name="config_defaultListenerAccessPackages" translatable="false">com.android.launcher3:com.google.android.projection.gearhead</string>
 
     <!-- Default autofill service to enable [DO NOT TRANSLATE] -->
     <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
+
+    <!-- Default credential provider service that provides credntials from a remote device [DO NOT TRANSLATE] -->
+    <string name="config_defaultCredentialManagerHybridService" translatable="false">com.google.android.gms/.auth.api.credentials.credman.service.RemoteService</string>
 
     <!-- Flag indicating which package name can access DeviceConfig table [DO NOT TRANSLATE] -->
     <string name="config_deviceConfiguratorPackageName" translatable="false">com.google.android.gms</string>
@@ -135,7 +153,7 @@
     <string name="config_systemWellbeing" translatable="false">com.google.android.apps.wellbeing</string>
 
     <!-- The package name for the default wellbeing application. [DO NOT TRANSLATE] -->
-    <string name="config_defaultWellbeingPackage" translatable="false">com.google.android.apps.wellbeing</string>
+    <string name="config_defaultWellbeingPackage" translatable="false">@string/config_systemWellbeing</string>
 
     <!-- The name of the package that will hold the game service role. -->
     <string name="config_systemGameService" translatable="false">com.google.android.gms</string>
@@ -143,22 +161,11 @@
     <!-- The name of the package that will hold the system activity recognizer role. -->
     <string name="config_systemActivityRecognizer" translatable="false">com.google.android.gms</string>
 
-    <!-- Messages that should not be shown to the user during face auth enrollment. This should be
-     used to hide messages that may be too chatty or messages that the user can't do much about.
-     Entries are defined in android.hardware.biometrics.face@1.0 types.hal -->
-    <!-- Same as the above, but are defined by vendorCodes -->
+    <!-- The name of the package that will hold the system financed device controller role. -->
+    <!-- This configuration is provided by app-specific RRO modules -->
 
-    <!-- Messages that should not be shown to the user during face authentication, on keyguard.
-         This includes both lockscreen and bouncer. This should be used to hide messages that may be
-         too chatty or messages that the user can't do much about. Entries are defined in
-         android.hardware.biometrics.face@1.0 types.hal -->
-    <!-- Same as the above, but are defined by vendorCodes -->
-
-    <!-- Messages that should not be shown to the user during face authentication, on
-     BiometricPrompt. This should be used to hide messages that may be too chatty or messages that
-     the user can't do much about. Entries are defined in
-     android.hardware.biometrics.face@1.0 types.hal -->
-    <!-- Same as the above, but are defined by vendorCodes -->
+    <!-- The name of the package that will hold the call streaming role. -->
+    <string name="config_systemCallStreaming" translatable="false">com.google.android.gms</string>
 
     <string-array name="config_integrityRuleProviderPackages" translatable="false">
         <item>com.android.vending</item>
@@ -176,21 +183,6 @@
     <!-- The package name for the fast pair provider application. [DO NOT TRANSLATE] -->
     <string name="config_systemCompanionDeviceProvider" translatable="false">com.google.android.gms</string>
 
-    <!-- A list of packages managing companion device(s) by the same manufacturers as the main
-         device. It will not create the association without prompt if the association has been
-         called multiple times in a short period.
-         Note that config_companionDeviceManagerPackage and config_companionDeviceCerts are
-         parallel arrays.
-     -->
-
-    <!-- A list of SHA256 Certificates managing companion device(s) by the same manufacturers as
-         the main device. It will fall back to showing a prompt if the association has been called
-         multiple times in a short period.
-         Note that config_companionDeviceCerts and config_companionDeviceManagerPackage are parallel
-         arrays.
-         Example: "1A:2B:3C:4D"
-     -->
-
     <!-- Flag indicating if help links for Settings app should be enabled. -->
     <bool name="config_settingsHelpLinksEnabled">false</bool>
 
@@ -200,11 +192,49 @@
     <!-- The name of the package that will handle updating the device management role. -->
     <string name="config_devicePolicyManagementUpdater" translatable="false">com.google.android.gms</string>
 
-    <!-- An array of packages for which notifications cannot be blocked. -->
-    <string-array name="config_nonBlockableNotificationPackages" translatable="false">
-        <item>com.google.android.setupwizard</item>
-        <item>com.google.android.apps.restore</item>
-        <item>com.google.android.dialer</item>
+    <!-- Whether or not to enable the lock screen entry point for the QR code scanner. -->
+    <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
+
+    <!-- Default component for QR code scanner -->
+    <string name="config_defaultQrCodeComponent" translatable="false">com.google.android.gms/.mlkit.barcode.ui.PlatformBarcodeScanningActivityProxy</string>
+
+    <string-array translatable="false" name="config_fontManagerServiceCerts">
+      <item>/product/etc/security/fsverity/gms_fsverity_cert.der</item>
+    </string-array>
+
+    <!-- Certificate digests for trusted apps that will be allowed to obtain the knownSigner
+         permission for staging HealthConnect's remote data. The digest should be computed over the
+         DER encoding of the trusted certificate using the SHA-256 digest algorithm. -->
+    <string-array name="config_healthConnectRestoreKnownSigners">
+      <item>56BE132B780656FE2444CD34326EB5D7AAC91D2096ABF0FE673A99270622EC87</item>
+    </string-array>
+
+    <!-- Certificate digests for trusted apps that will be allowed to obtain the knownSigner Health
+        Connect Migration permissions. The digest should be computed over the DER encoding of the
+        trusted certificate using the SHA-256 digest algorithm. -->
+     <string-array name="config_healthConnectMigrationKnownSigners">
+      <item>B2C0A80E485934BFB08F902CA27505813DF3159E4E6DD4A4DF078D66CB1C2003</item>
+    </string-array>
+
+    <!-- Package name for Healthconnect migrator package. -->
+    <string name="config_healthConnectMigratorPackageName">com.google.android.apps.healthdata</string>
+
+    <!-- The system and settings UI can support all the features of instant tether. If set to false,
+     instant tether will run in notifications mode -->
+    <bool name="config_hotspotNetworksEnabledForService">false</bool>
+
+    <!-- The system and settings UI can support all the features of known networks. If set to false,
+         known networks will run in notifications mode -->
+    <bool name="config_knownNetworksEnabledForService">false</bool>
+
+    <!-- Credential provider services to be enabled by default. [DO NOT TRANSLATE] -->
+    <string-array name="config_enabledCredentialProviderService" translatable="false">
+        <item>com.google.android.gms/.auth.api.credentials.credman.service.PasswordAndPasskeyService</item>
+    </string-array>
+
+    <!-- Primary credential provider service to enable. [DO NOT TRANSLATE] -->
+    <string-array name="config_primaryCredentialProviderService" translatable="false">
+        <item>com.google.android.gms/.auth.api.credentials.credman.service.PasswordAndPasskeyService</item>
     </string-array>
 
     <!-- An array of packages that can make sound on the ringer stream in priority-only DND mode -->
@@ -251,101 +281,13 @@
         <item>com.android.vending</item>
     </string-array>
 
-    <!-- The component name(s), flattened to a string, for the system's credential manager
-      provider services. These services allow retrieving and storing credentials.
-
-     These services must be trusted, as they can be activated without explicit consent of the user.
-     If no service with the specified name exists on the device, there will be no user configurable
-     provider to service credential manager requests. However, credential manager system
-     services that do not require user consent, will still work.
-
-     See android.credentials.CredentialManager
-    -->
-    <string-array name="config_enabledCredentialProviderService">
-        <item>com.google.android.gms/.auth.api.credentials.credman.service.PasswordAndPasskeyService</item>
-    </string-array>
-
-    <!-- List of certificate to be used for font fs-verity integrity verification -->
-    <string-array name="config_fontManagerServiceCerts">
-        <item>/product/etc/security/fsverity/gms_fsverity_cert.der</item>
-    </string-array>
-
-    <!-- Certificate digests for trusted apps that will be allowed to obtain the knownSigner Health
-        Connect Migration permissions. The digest should be computed over the DER encoding of the
-        trusted certificate using the SHA-256 digest algorithm. -->
-    <string-array name="config_healthConnectMigrationKnownSigners">
-        <item>B2C0A80E485934BFB08F902CA27505813DF3159E4E6DD4A4DF078D66CB1C2003</item>
-    </string-array>
-
-    <!-- Certificate digests for trusted apps that will be allowed to obtain the knownSigner
-         permission for staging HealthConnect's remote data. The digest should be computed over the
-         DER encoding of the trusted certificate using the SHA-256 digest algorithm. -->
-    <string-array name="config_healthConnectRestoreKnownSigners">
-        <item>56BE132B780656FE2444CD34326EB5D7AAC91D2096ABF0FE673A99270622EC87</item>
-    </string-array>
-
-    <!-- The component name(s), flattened to a string, for the system's primary credential manager
-      provider services. These service will be used by default for storing credentials.
-
-     These services must be trusted, as they can be activated without explicit consent of the user.
-
-     See android.credentials.CredentialManager
-    -->
-    <string-array name="config_primaryCredentialProviderService">
-        <item>com.google.android.gms/.auth.api.credentials.credman.service.PasswordAndPasskeyService</item>
-    </string-array>
-
-    <!-- Controls whether system buttons use all caps for text -->
-    <bool name="config_buttonTextAllCaps">false</bool>
-
-    <!-- The system and settings UI can support all the features of instant tether. If set to false,
-     instant tether will run in notifications mode -->
-    <bool name="config_hotspotNetworksEnabledForService">false</bool>
-
-    <!-- The system and settings UI can support all the features of known networks. If set to false,
-         known networks will run in notifications mode -->
-    <bool name="config_knownNetworksEnabledForService">false</bool>
-
-    <!-- Flag indicating whether we should enable smart battery. -->
-    <bool name="config_smart_battery_available">true</bool>
-
     <!-- Whether system apps should be scanned in the stopped state during initial boot.
         Packages can be added by OEMs in an allowlist, to prevent them from being scanned as
         "stopped" during initial boot of a device, or after an OTA update. Stopped state of
-        an app is not changed during subsequent reboots.  -->
+        an app is not changed during subsequent reboots. OEMs are strongly recommended to
+        keep this config turned on. -->
     <bool name="config_stopSystemPackagesByDefault">true</bool>
 
-    <!-- Whether this device is supporting the camera toggle -->
-    <bool name="config_supportsCamToggle">true</bool>
-
-    <!-- Whether this device is supporting the software microphone toggle -->
-    <bool name="config_supportsMicToggle">true</bool>
-
-    <!-- Indicates whether the system wide captions service should also support
-         call captioning.
-    -->
-    <bool name="config_systemCaptionsServiceCallsEnabled">true</bool>
-
-    <!-- The component name, flattened to a string, for the system's credential manager
-      hybrid service. This service allows credential retrieval and storage from, and to
-      remote devices.
-
-     This service must be trusted, as it can be activated without explicit consent of the user.
-     If no service with the specified name exists on the device, credential manager
-     will still work, but remote credential retrieval and storage will not be offered to
-     the user.
-
-     See android.credentials.CredentialManager
-    -->
-    <string name="config_defaultCredentialManagerHybridService">com.google.android.gms/.auth.api.credentials.credman.service.RemoteService</string>
-
-    <!-- Default component for QR code scanner -->
-    <string name="config_defaultQrCodeComponent">com.google.android.gms/.mlkit.barcode.ui.PlatformBarcodeScanningActivityProxy</string>
-
-    <!-- Package name of Health Connect data migrator application.  -->
-    <string name="config_healthConnectMigratorPackageName">com.google.android.apps.healthdata</string>
-
-    <!-- The name of the package that will hold the call streaming role. -->
-    <string name="config_systemCallStreaming">com.google.android.gms</string>
-
+    <!-- Set system buttons use all caps for text as false -->
+    <bool name="config_buttonTextAllCaps">false</bool>
 </resources>

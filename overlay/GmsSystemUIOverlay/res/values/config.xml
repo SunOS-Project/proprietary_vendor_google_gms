@@ -17,7 +17,7 @@
 
     <!-- The default tiles to display in QuickSettings -->
     <string name="quick_settings_tiles_default" translatable="false">
-        wifi,bt,dnd,flashlight,rotation,battery,cell,airplane,night,screenrecord,custom(com.google.android.gms/.nearby.sharing.SharingTileService)
+        wifi,bt,dnd,flashlight,rotation,battery,cell,airplane,night,screenrecord,qr_code_scanner,custom(com.google.android.gms/.nearby.sharing.SharingTileService)
     </string>
 
     <!-- Controls can query 2 preferred applications for limited number of suggested controls.

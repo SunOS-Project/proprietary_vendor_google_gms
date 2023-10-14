@@ -18,8 +18,4 @@ It allows additional grants on top of privapp-permissions-platform.xml
     <privapp-permissions package="com.google.android.tag">
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
-
-    <privapp-permissions package="com.google.android.apps.nbu.files">
-        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
-    </privapp-permissions>
 </permissions>

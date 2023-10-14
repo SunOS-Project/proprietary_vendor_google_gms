@@ -73,13 +73,4 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.WRITE_APN_SETTINGS"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
-    <!-- Modify by Nothing Taihu for Google Wallpaper default permission -->
-    <privapp-permissions package="com.google.android.apps.wallpaper">
-        <permission name="android.permission.READ_WALLPAPER_INTERNAL"/>
-        <permission name="android.permission.SET_WALLPAPER_COMPONENT"/>
-        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
-        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
-        <permission name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
-        <permission name="android.permission.BIND_WALLPAPER"/>
-    </privapp-permissions>
 </permissions>
