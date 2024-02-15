@@ -53,6 +53,14 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        product/priv-app/Messages/Messages.apk | product/priv-app/GmsCore/GmsCore.apk | product/priv-app/Velvet/Velvet.apk | product/app/TrichromeLibrary64/TrichromeLibrary64.apk | product/app/Gmail2/Gmail2.apk | product/app/Photos/Photos.apk )
+            split --bytes=49M -d "$2" "$2".part
+            ;;
+    esac
+}
+
 # Initialize the helper.
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
