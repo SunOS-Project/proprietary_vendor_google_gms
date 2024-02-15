@@ -7,6 +7,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
 <permissions>
     <privapp-permissions package="com.google.android.dialer">
         <permission name="android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK"/>
+        <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
         <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
         <permission name="android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT"/>
         <permission name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS"/>

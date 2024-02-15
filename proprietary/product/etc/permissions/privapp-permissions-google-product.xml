@@ -153,6 +153,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
         <permission name="android.permission.MANAGE_USERS"/>
         <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.apps.turbo">
@@ -210,6 +211,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.BACKUP"/>
         <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
         <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+        <permission name="android.permission.CALL_AUDIO_INTERCEPTION"/>
         <permission name="android.permission.CALL_PRIVILEGED"/>
         <permission name="android.permission.CAPTURE_AUDIO_HOTWORD"/>
         <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
@@ -224,6 +226,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.DISPATCH_PROVISIONING_MESSAGE"/>
         <permission name="android.permission.DOMAIN_VERIFICATION_AGENT"/>
         <permission name="android.permission.DUMP"/>
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
         <permission name="android.permission.GET_APP_OPS_STATS"/>
         <permission name="android.permission.INSTALL_LOCATION_TIME_ZONE_PROVIDER_SERVICE"/>
         <permission name="android.permission.INTENT_FILTER_VERIFICATION_AGENT"/>
@@ -280,6 +283,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.SCORE_NETWORKS"/>
         <permission name="android.permission.SEND_SAFETY_CENTER_UPDATE"/>
         <permission name="android.permission.SEND_SMS_NO_CONFIRMATION"/>
+        <permission name="android.permission.SET_LOW_POWER_STANDBY_PORTS"/>
         <permission name="android.permission.SET_TIME"/>
         <permission name="android.permission.SET_TIME_ZONE"/>
         <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
