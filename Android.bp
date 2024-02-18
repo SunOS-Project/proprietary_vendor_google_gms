@@ -329,6 +329,7 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
+	relative_install_path: "GmsCore/m/independent",
 	privileged: true,
 	product_specific: true,
 }
