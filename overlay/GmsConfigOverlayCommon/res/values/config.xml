@@ -103,7 +103,13 @@
     <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
 
     <!-- Default credential provider service that provides credntials from a remote device [DO NOT TRANSLATE] -->
+    <string name="config_defaultCredentialManagerAutofillService" translatable="false">com.android.credentialmanager/com.android.credentialmanager.autofill.CredentialAutofillService</string>
+
+    <!-- Default credential provider service that provides credntials from a remote device [DO NOT TRANSLATE] -->
     <string name="config_defaultCredentialManagerHybridService" translatable="false">com.google.android.gms/.auth.api.credentials.credman.service.RemoteService</string>
+
+    <!--CredentialManager credential chooser UI component name, to override the default chooser UI [DO NOT TRANSLATE] -->
+    <string name="config_oemCredentialManagerDialogComponent" translatable="false">com.google.android.gms/.identitycredentials.ui.CredentialChooserActivity</string>
 
     <!-- Flag indicating which package name can access DeviceConfig table [DO NOT TRANSLATE] -->
     <string name="config_deviceConfiguratorPackageName" translatable="false">com.google.android.gms</string>
@@ -151,9 +157,6 @@
 
     <!-- The name of the package that will hold the wellbeing role. -->
     <string name="config_systemWellbeing" translatable="false">com.google.android.apps.wellbeing</string>
-
-    <!-- The package name for the default wellbeing application. [DO NOT TRANSLATE] -->
-    <string name="config_defaultWellbeingPackage" translatable="false">@string/config_systemWellbeing</string>
 
     <!-- The name of the package that will hold the game service role. -->
     <string name="config_systemGameService" translatable="false">com.google.android.gms</string>
