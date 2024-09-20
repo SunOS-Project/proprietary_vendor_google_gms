@@ -32,7 +32,7 @@ product/etc/sysconfig/wellbeing.xml
 product/framework/com.google.android.dialer.support.jar
 product/priv-app/AndroidAutoStub/AndroidAutoStub.apk;PRESIGNED
 product/priv-app/ConfigUpdater/ConfigUpdater.apk;PRESIGNED
-product/priv-app/CrossDeviceServices/CrossDeviceServices.apk;PRESIGNED
+product/priv-app/CrossDeviceServices/CrossDeviceServices.apk;PRESIGNED;SKIPAPKCHECKS
 product/priv-app/FamilyLinkParentalControls/FamilyLinkParentalControls.apk;PRESIGNED
 product/priv-app/FilesGoogle/FilesGoogle.apk;PRESIGNED
 product/priv-app/GmsCore/GmsCore.apk;OVERRIDES=NetworkRecommendation,StatementService;PRESIGNED
