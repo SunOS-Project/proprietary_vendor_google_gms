@@ -290,7 +290,6 @@ android_app_import {
 	apk: "proprietary/product/priv-app/CrossDeviceServices/CrossDeviceServices.apk",
 	preprocessed: true,
 	presigned: true,
-	skip_preprocessed_apk_checks: true,
 	dex_preopt: {
 		enabled: false,
 	},
