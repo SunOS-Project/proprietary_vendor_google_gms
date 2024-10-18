@@ -6,3 +6,4 @@ cat vendor/google/gms/proprietary/product/app/TrichromeLibrary64/TrichromeLibrar
 cat vendor/google/gms/proprietary/product/app/Gmail2/Gmail2.apk.part* > vendor/google/gms/proprietary/product/app/Gmail2/Gmail2.apk
 cat vendor/google/gms/proprietary/product/app/Photos/Photos.apk.part* > vendor/google/gms/proprietary/product/app/Photos/Photos.apk
 cat vendor/google/gms/proprietary/product/app/YouTube/YouTube.apk.part* > vendor/google/gms/proprietary/product/app/YouTube/YouTube.apk
+cat vendor/google/gms/proprietary/product/app/Maps/Maps.apk.part* > vendor/google/gms/proprietary/product/app/Maps/Maps.apk

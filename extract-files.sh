@@ -55,7 +55,7 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        product/priv-app/Messages/Messages.apk | product/priv-app/GmsCore/GmsCore.apk | product/priv-app/Velvet/Velvet.apk | product/app/TrichromeLibrary64/TrichromeLibrary64.apk | product/app/Gmail2/Gmail2.apk | product/app/Photos/Photos.apk | product/app/YouTube/YouTube.apk )
+        product/priv-app/Messages/Messages.apk | product/priv-app/GmsCore/GmsCore.apk | product/priv-app/Velvet/Velvet.apk | product/app/TrichromeLibrary64/TrichromeLibrary64.apk | product/app/Gmail2/Gmail2.apk | product/app/Photos/Photos.apk | product/app/YouTube/YouTube.apk | product/app/Maps/Maps.apk )
             split --bytes=49M -d "$2" "$2".part
             ;;
     esac
