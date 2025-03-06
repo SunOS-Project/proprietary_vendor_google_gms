@@ -19,6 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/gms/proprietary/product/etc/sysconfig/google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google.xml \
     vendor/google/gms/proprietary/product/etc/sysconfig/google_wifi_provisioner.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google_wifi_provisioner.xml \
     vendor/google/gms/proprietary/product/etc/sysconfig/personal_safety.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/personal_safety.xml \
+    vendor/google/gms/proprietary/product/etc/sysconfig/sysconfig_gemini.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/sysconfig_gemini.xml \
     vendor/google/gms/proprietary/product/etc/sysconfig/wellbeing.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/wellbeing.xml \
     vendor/google/gms/proprietary/product/usr/srec/en-US/APP_NAME.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/APP_NAME.fst \
     vendor/google/gms/proprietary/product/usr/srec/en-US/APP_NAME.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/APP_NAME.syms \
@@ -100,6 +101,7 @@ PRODUCT_PACKAGES += \
     Chrome64 \
     DeskClockGoogle \
     Drive \
+    Gemini \
     Gmail2 \
     GoogleContacts \
     GoogleLocationHistory \

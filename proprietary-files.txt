@@ -3,6 +3,7 @@ product/app/CalendarGoogle/CalendarGoogle.apk;OVERRIDES=Calendar;PRESIGNED
 product/app/Chrome64/Chrome64.apk;OVERRIDES=Browser,Browser2;PRESIGNED
 product/app/DeskClockGoogle/DeskClockGoogle.apk;OVERRIDES=DeskClock;PRESIGNED
 product/app/Drive/Drive.apk;PRESIGNED
+product/app/Gemini/Gemini.apk;PRESIGNED
 product/app/Gmail2/Gmail2.apk;OVERRIDES=Email;PRESIGNED
 product/app/GoogleContacts/GoogleContacts.apk;OVERRIDES=Contacts;PRESIGNED
 product/app/GoogleLocationHistory/GoogleLocationHistory.apk;PRESIGNED
@@ -28,6 +29,7 @@ product/etc/sysconfig/google.xml
 product/etc/sysconfig/google-initial-package-stopped-states.xml
 product/etc/sysconfig/google_wifi_provisioner.xml
 product/etc/sysconfig/personal_safety.xml
+product/etc/sysconfig/sysconfig_gemini.xml
 product/etc/sysconfig/wellbeing.xml
 product/framework/com.google.android.dialer.support.jar
 product/priv-app/AndroidAutoStub/AndroidAutoStub.apk;PRESIGNED
